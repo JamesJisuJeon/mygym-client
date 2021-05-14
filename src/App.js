@@ -1,5 +1,13 @@
+/** @jsxImportSource @emotion/react */
+import { jsx, css } from '@emotion/react';
+
 import logo from './logo.svg';
 import './App.css';
+
+
+const style = css`
+  color: hotpink;
+`
 
 function App() {
   return (
@@ -17,6 +25,9 @@ function App() {
         >
           Learn React
         </a>
+        <div css={style}>
+          <p>Emotion</p>
+        </div>
       </header>
     </div>
   );
